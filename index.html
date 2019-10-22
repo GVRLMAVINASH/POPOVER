@@ -1,75 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <link rel="prefetch" href="./assets/images/1.png">
     <link rel="stylesheet" href="index.css">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!------ Include the above in your HEAD tag ---------->
-
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        /* Create two equal columns that floats next to each other */
-        .column {
-            float: left;
-            width: 50%;
-            padding: 10px;
-            height: 300px;
-            /* Should be removed. Only for demonstration */
-        }
-
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-    </style> -->
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
 
-    <h2>Two Equal Columns</h2>
+    <div class="container">
+        <div class="row">
+            <div class="column" style="margin-left:25%;" style="background-color:#aaa;">
+                <button onclick="document.getElementById('myImage').src='./assets/images/1.png'">ONE</button><br>
+                <button onclick="document.getElementById('myImage').src='./assets/images/2.png'">TWO</button><br>
+                <button onclick="document.getElementById('myImage').src='./assets/images/3.png'">THREE</button><br>
+                <button onclick="document.getElementById('myImage').src='./assets/images/4.png'">FOUR</button><br>
+                <button onclick="document.getElementById('myImage').src='./assets/images/5.png'">FIVE</button><br>
+            </div>
+            <div class="column">
+                <img id="myImage" src="./assets/images/3.png" usemap="#image_map">
+                <map name="image_map">
+                    <area content="askjbdkjahsdkkjashdkjahskdjhaskdhaskjdhsakjdhaksjdhkjdhkajsdh"
+                        href="http://ignob.com" coords="696,375,43" shape="circle">
+                    <a data-toggle="popover" title="Popover Headerdddasdjshdjasdjhasdjahdjashdkjadkjahsdkjahdkjasdhkjh"
+                        data-content="Some content inside the popover" class="intro-banner-vdo-play-btn pinkBg"
+                        target="_blank">
+                        <i class="glyphicon glyphicon-play whiteText" aria-hidden="true"></i>
+                        <span class="ripple pinkBg"></span>
+                        <span class="ripple pinkBg"></span>
+                        <span class="ripple pinkBg"></span>
+                    </a>
 
-    <div class="row">
-        <div class="column" style="margin-left:25%;" style="background-color:#aaa;">
-            <button onclick="document.getElementById('myImage').src='./assets/images/1.png'">ONE</button><br>
-            <button onclick="document.getElementById('myImage').src='./assets/images/2.png'">TWO</button><br>
-            <button onclick="document.getElementById('myImage').src='./assets/images/3.png'">THREE</button><br>
-            <button onclick="document.getElementById('myImage').src='./assets/images/4.png'">FOUR</button><br>
-            <button onclick="document.getElementById('myImage').src='./assets/images/5.png'">FIVE</button><br>
-        </div>
-        <div class="column">
-            <img id="myImage" src="./assets/images/3.png" usemap="#image_map">
-            <map name="image_map">
-                <area content="askjbdkjahsdkkjashdkjahskdjhaskdhaskjdhsakjdhaksjdhkjdhkajsdh" href="http://ignob.com"
-                    coords="696,375,43" shape="circle">
-                <a data-toggle="popover" title="Popover Headerdddasdjshdjasdjhasdjahdjashdkjadkjahsdkjahdkjasdhkjh"
-                    data-content="Some content inside the popover" class="intro-banner-vdo-play-btn pinkBg"
-                    target="_blank">
-                    <i class="glyphicon glyphicon-play whiteText" aria-hidden="true"></i>
-                    <span class="ripple pinkBg"></span>
-                    <span class="ripple pinkBg"></span>
-                    <span class="ripple pinkBg"></span>
-                </a>
-
-            </map>
+                </map>
+            </div>
         </div>
     </div>
-    <script> $(document).ready(function () {
-            $('[data-toggle="popover"]').popover();
-        });</script>
 
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
 
 </body>
 
 </html>
+
 
 
 
@@ -98,31 +79,3 @@
     </form>
     <img id="a" src="./assets/images/1.png" width="802" height="602" alt="">
 </body>-->
-
-<!-- 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-</head>
-<body>
-
-<div class="container">
-  <h3>Popover Example</h3>
-  <p>Popovers are not CSS-only plugins, and must therefore be initialized with jQuery: select the specified element and call the popover() method.</p>
-  <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
-</div>
-
-<script>
-$(document).ready(function(){
-  $('[data-toggle="popover"]').popover();   
-});
-</script>
-
-</body>
-</html> -->
