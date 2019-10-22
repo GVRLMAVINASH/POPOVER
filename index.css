@@ -1,111 +1,63 @@
-        .pinkBg {
-            background-color: #ed184f;
-            background-image: linear-gradient(90deg, #fd5581, #fd8b55);
-        }
 
-        .intro-banner-vdo-play-btn {
-            height: 60px;
-            width: 60px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            text-align: center;
-            margin: -30px 0 0 -30px;
-            border-radius: 100px;
-            z-index: 1
-        }
+.pinkBg {
+    background-color: #ed184f;
+    background-image: linear-gradient(90deg, #fd5581, #fd8b55);
+}
 
-        .intro-banner-vdo-play-btn i {
-            line-height: 56px;
-            font-size: 30px
-        }
-
-        .intro-banner-vdo-play-btn .ripple {
-            position: absolute;
-            width: 160px;
-            height: 160px;
-            z-index: -1;
-            left: 50%;
-            top: 50%;
-            opacity: 0;
-            margin: -80px 0 0 -80px;
-            border-radius: 100px;
-            animation: ripple 1.8s infinite
-        }
-
-        @-webkit-keyframes ripple {
-            0% {
-                opacity: 1;
-                -webkit-transform: scale(0);
-                transform: scale(0)
-            }
-
-            100% {
-                opacity: 0;
-                -webkit-transform: scale(1);
-                transform: scale(1)
-            }
-        }
-
-        @keyframes ripple {
-            0% {
-                opacity: 1;
-                -webkit-transform: scale(0);
-                transform: scale(0)
-            }
-
-            100% {
-                opacity: 0;
-                -webkit-transform: scale(1);
-                transform: scale(1)
-            }
-        }
-
-/* class dot*/
-
-.dot:before{
-    content:' ';
+.intro-banner-vdo-play-btn {
+    height: 60px;
+    width: 60px;
     position: absolute;
-    z-index:2;
-    left:0;
-    top:0;
-    width:20px;
-    height:20px; 
-    background-color: #2ac272;
-    border-radius: 50%;
-    color:black;
-  }
-  
-  .dot:after {
-    content:' ';
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    margin: -30px 0 0 -30px;
+    border-radius: 100px;
+    z-index: 1
+}
+
+.intro-banner-vdo-play-btn i {
+    line-height: 56px;
+    font-size: 30px
+}
+
+.intro-banner-vdo-play-btn .ripple {
     position: absolute;
-    z-index:1;
-    width:20px;
-    height:20px; 
-    background-color: #1f7567;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0,0,0,.3) inset;
-    -webkit-animation-name:'ripple';/*动画属性名，也就是我们前面keyframes定义的动画名*/
-    -webkit-animation-duration: 1s;/*动画持续时间*/
-    -webkit-animation-timing-function: ease; /*动画频率，和transition-timing-function是一样的*/
-    -webkit-animation-delay: 0s;/*动画延迟时间*/
-    -webkit-animation-iteration-count: infinite;/*定义循环资料，infinite为无限次*/
-    -webkit-animation-direction: normal;/*定义动画方式*/
-  }
-  
-  @keyframes ripple {
-     0% {
-      left:10px;
-      top:10px;
-      opcity:75;
-      width:0;
-      height:0;
+    width: 160px;
+    height: 160px;
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    opacity: 0;
+    margin: -80px 0 0 -80px;
+    border-radius: 100px;
+    animation: ripple 1.8s infinite
+}
+
+@-webkit-keyframes ripple {
+    0% {
+        opacity: 1;
+        -webkit-transform: scale(0);
+        transform: scale(0)
     }
+
     100% {
-      left:-40px;
-      top:-40px;
-      opacity: 0;
-      width:100px;
-      height:100px;
+        opacity: 0;
+        -webkit-transform: scale(1);
+        transform: scale(1)
     }
-  }
+}
+
+@keyframes ripple {
+    0% {
+        opacity: 1;
+        -webkit-transform: scale(0);
+        transform: scale(0)
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
